@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 12px;
+    background-color: #fafafa;
+}
+
+button,input[type="submit"] {
+    cursor: pointer;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+#footer {
+    margin-top: 10px;
+    min-height: 100px;
+    background-color: #333;
+}
+
+
+#content {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+}
+
+#left-content {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: inherit;
+}
+
+#right-content {
+    width: 300px;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+/*==================== MENU =================*/
+nav {
+    background-color: #F2A1B2;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+nav a hover {
+    background-color: #333;
+}
+
+#menu-d ul {
+    background: #8AD385;
+    width: 300px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#menu-d li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e41111;
+    padding: 0 1em;
+}
+
+#menu-d li a {
+    text-decoration: none;
+    color: rgb(203, 17, 17);
+    font-weight: bold;
+    display: block;
+}
+
+#menu-d li:hover {
+    background: #ee0e7e;
+}
+
+#menu-d ul li {
+    position: relative;
+}
+
+#menu-d .sub-menu {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    display: none;
+}
+
+#menu-d li:hover .sub-menu {
+    display: block;
+}
+
+
+/*==================== PRODUCT =================*/
+#products {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.product {
+    padding: .75rem;
+    display: block;
+    flex: none;
+    width: 33.33333%;
+}
+
+.product:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    -webkit-transform: all .3s ease-in-out;
+    -ms-transform: all .3s ease-in-out;
+    transform: all .3s ease-in-out;
+}
+
+.product:hover .p-img img {
+    transform: scale(1.02);
+}
+
+.product .text {
+    padding-top: 10px;
+}
+
+
+.product .text .p-name {
+    font-size: 22px;
+}
+
+.product .text .p-price {
+    padding-top: 5px;
+    color: #ff3425;
+    font-size: 20px;
+}
+
+.product .text button {
+    float: right;
+}
+
+
+/* ================= LIEN HE ==================*/
+
+#info {
+    width: 100%;
+}
+
+#info .row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+#info .row .column {
+    padding: .75rem;
+    display: block;
+    flex: none;
+    width: 33.33333%;
+}
+
+
+.table td{
+    padding: 5px 0;
+}
